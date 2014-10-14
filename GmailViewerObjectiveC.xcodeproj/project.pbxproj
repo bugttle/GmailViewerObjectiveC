@@ -14,6 +14,11 @@
 		CE8DEB8519ED5BD0003D7518 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8DEB8419ED5BD0003D7518 /* Images.xcassets */; };
 		CE8DEB8819ED5BD0003D7518 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8DEB8619ED5BD0003D7518 /* LaunchScreen.xib */; };
 		CE8DEB9419ED5BD0003D7518 /* GmailViewerObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8DEB9319ED5BD0003D7518 /* GmailViewerObjectiveCTests.m */; };
+		CE8DEBAC19ED5FF0003D7518 /* libGTLTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8DEBA719ED5FBA003D7518 /* libGTLTouchStaticLib.a */; };
+		CE8DEBAE19ED6019003D7518 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8DEBAD19ED6019003D7518 /* Security.framework */; };
+		CE8DEBB019ED6020003D7518 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8DEBAF19ED6020003D7518 /* SystemConfiguration.framework */; };
+		CE8DEC1219ED61B1003D7518 /* GTLGmail_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8DEBF119ED61B1003D7518 /* GTLGmail_Sources.m */; };
+		CE8DEC2419ED6208003D7518 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8DEC2319ED6208003D7518 /* GTMOAuth2ViewTouch.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +28,41 @@
 			proxyType = 1;
 			remoteGlobalIDString = CE8DEB7319ED5BD0003D7518;
 			remoteInfo = GmailViewerObjectiveC;
+		};
+		CE8DEBA419ED5FBA003D7518 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE8DEB9D19ED5FBA003D7518 /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F38F6A60B66E91D00B24B81;
+			remoteInfo = GTLFramework;
+		};
+		CE8DEBA619ED5FBA003D7518 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE8DEB9D19ED5FBA003D7518 /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F12027C11A4CA2F00BEB470;
+			remoteInfo = GTLTouchStaticLib;
+		};
+		CE8DEBA819ED5FBA003D7518 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE8DEB9D19ED5FBA003D7518 /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F12027D11A4CA2F00BEB470;
+			remoteInfo = GTLUnitTests;
+		};
+		CE8DEBAA19ED5FBA003D7518 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE8DEB9D19ED5FBA003D7518 /* GTL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F1AD9020B71603F00DC0485;
+			remoteInfo = DevelopmentTestTool;
+		};
+		CE8DEBB319ED60DA003D7518 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE8DEB9D19ED5FBA003D7518 /* GTL.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F1C6E0E1027B3CE00B46459;
+			remoteInfo = GTLTouchStaticLib;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,6 +80,39 @@
 		CE8DEB8D19ED5BD0003D7518 /* GmailViewerObjectiveCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GmailViewerObjectiveCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8DEB9219ED5BD0003D7518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE8DEB9319ED5BD0003D7518 /* GmailViewerObjectiveCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GmailViewerObjectiveCTests.m; sourceTree = "<group>"; };
+		CE8DEB9D19ED5FBA003D7518 /* GTL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTL.xcodeproj; path = "google-api-objectc-client/GTL.xcodeproj"; sourceTree = "<group>"; };
+		CE8DEBAD19ED6019003D7518 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CE8DEBAF19ED6020003D7518 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CE8DEBD319ED6185003D7518 /* GTLBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLBase64.h; sourceTree = "<group>"; };
+		CE8DEBD419ED6185003D7518 /* GTLBatchQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLBatchQuery.h; sourceTree = "<group>"; };
+		CE8DEBD519ED6185003D7518 /* GTLBatchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLBatchResult.h; sourceTree = "<group>"; };
+		CE8DEBD619ED6185003D7518 /* GTLDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLDateTime.h; sourceTree = "<group>"; };
+		CE8DEBD719ED6185003D7518 /* GTLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLDefines.h; sourceTree = "<group>"; };
+		CE8DEBD819ED6185003D7518 /* GTLErrorObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLErrorObject.h; sourceTree = "<group>"; };
+		CE8DEBD919ED6185003D7518 /* GTLFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLFramework.h; sourceTree = "<group>"; };
+		CE8DEBDA19ED6185003D7518 /* GTLJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLJSONParser.h; sourceTree = "<group>"; };
+		CE8DEBDB19ED6185003D7518 /* GTLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLObject.h; sourceTree = "<group>"; };
+		CE8DEBDC19ED6185003D7518 /* GTLQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLQuery.h; sourceTree = "<group>"; };
+		CE8DEBDD19ED6185003D7518 /* GTLRuntimeCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLRuntimeCommon.h; sourceTree = "<group>"; };
+		CE8DEBDE19ED6185003D7518 /* GTLService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLService.h; sourceTree = "<group>"; };
+		CE8DEBDF19ED6185003D7518 /* GTLTargetNamespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLTargetNamespace.h; sourceTree = "<group>"; };
+		CE8DEBE019ED6185003D7518 /* GTLUploadParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLUploadParameters.h; sourceTree = "<group>"; };
+		CE8DEBE119ED6185003D7518 /* GTLUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLUtilities.h; sourceTree = "<group>"; };
+		CE8DEBE219ED6185003D7518 /* GTMGatherInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMGatherInputStream.h; sourceTree = "<group>"; };
+		CE8DEBE319ED6185003D7518 /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcher.h; sourceTree = "<group>"; };
+		CE8DEBE419ED6185003D7518 /* GTMHTTPFetcherLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcherLogging.h; sourceTree = "<group>"; };
+		CE8DEBE519ED6185003D7518 /* GTMHTTPFetcherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcherService.h; sourceTree = "<group>"; };
+		CE8DEBE619ED6185003D7518 /* GTMHTTPFetchHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetchHistory.h; sourceTree = "<group>"; };
+		CE8DEBE719ED6185003D7518 /* GTMHTTPUploadFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPUploadFetcher.h; sourceTree = "<group>"; };
+		CE8DEBE819ED6185003D7518 /* GTMMIMEDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMMIMEDocument.h; sourceTree = "<group>"; };
+		CE8DEBE919ED6185003D7518 /* GTMOAuth2Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2Authentication.h; sourceTree = "<group>"; };
+		CE8DEBEA19ED6185003D7518 /* GTMOAuth2SignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2SignIn.h; sourceTree = "<group>"; };
+		CE8DEBEB19ED6185003D7518 /* GTMOAuth2ViewControllerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2ViewControllerTouch.h; sourceTree = "<group>"; };
+		CE8DEBEC19ED6185003D7518 /* GTMOAuth2WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2WindowController.h; sourceTree = "<group>"; };
+		CE8DEBED19ED6185003D7518 /* GTMReadMonitorInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMReadMonitorInputStream.h; sourceTree = "<group>"; };
+		CE8DEBF019ED61B1003D7518 /* GTLGmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLGmail.h; sourceTree = "<group>"; };
+		CE8DEBF119ED61B1003D7518 /* GTLGmail_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLGmail_Sources.m; sourceTree = "<group>"; };
+		CE8DEC2319ED6208003D7518 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = "google-api-objectc-client/OAuth2/Touch/GTMOAuth2ViewTouch.xib"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +120,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8DEBAC19ED5FF0003D7518 /* libGTLTouchStaticLib.a in Frameworks */,
+				CE8DEBAE19ED6019003D7518 /* Security.framework in Frameworks */,
+				CE8DEBB019ED6020003D7518 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +139,11 @@
 		CE8DEB6B19ED5BD0003D7518 = {
 			isa = PBXGroup;
 			children = (
+				CE8DEB9D19ED5FBA003D7518 /* GTL.xcodeproj */,
+				CE8DEBD119ED6185003D7518 /* Api Services */,
 				CE8DEB7619ED5BD0003D7518 /* GmailViewerObjectiveC */,
 				CE8DEB9019ED5BD0003D7518 /* GmailViewerObjectiveCTests */,
+				CE8DEBB119ED6084003D7518 /* Frameworks */,
 				CE8DEB7519ED5BD0003D7518 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,6 +198,88 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CE8DEB9E19ED5FBA003D7518 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE8DEBA519ED5FBA003D7518 /* GTL.framework */,
+				CE8DEBA719ED5FBA003D7518 /* libGTLTouchStaticLib.a */,
+				CE8DEBA919ED5FBA003D7518 /* GTLUnitTests.xctest */,
+				CE8DEBAB19ED5FBA003D7518 /* DevelopmentTestTool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE8DEBB119ED6084003D7518 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE8DEBAD19ED6019003D7518 /* Security.framework */,
+				CE8DEBAF19ED6020003D7518 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE8DEBD119ED6185003D7518 /* Api Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE8DEC2319ED6208003D7518 /* GTMOAuth2ViewTouch.xib */,
+				CE8DEBD219ED6185003D7518 /* Headers */,
+				CE8DEBEE19ED61B1003D7518 /* Gmail */,
+			);
+			path = "Api Services";
+			sourceTree = "<group>";
+		};
+		CE8DEBD219ED6185003D7518 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				CE8DEBD319ED6185003D7518 /* GTLBase64.h */,
+				CE8DEBD419ED6185003D7518 /* GTLBatchQuery.h */,
+				CE8DEBD519ED6185003D7518 /* GTLBatchResult.h */,
+				CE8DEBD619ED6185003D7518 /* GTLDateTime.h */,
+				CE8DEBD719ED6185003D7518 /* GTLDefines.h */,
+				CE8DEBD819ED6185003D7518 /* GTLErrorObject.h */,
+				CE8DEBD919ED6185003D7518 /* GTLFramework.h */,
+				CE8DEBDA19ED6185003D7518 /* GTLJSONParser.h */,
+				CE8DEBDB19ED6185003D7518 /* GTLObject.h */,
+				CE8DEBDC19ED6185003D7518 /* GTLQuery.h */,
+				CE8DEBDD19ED6185003D7518 /* GTLRuntimeCommon.h */,
+				CE8DEBDE19ED6185003D7518 /* GTLService.h */,
+				CE8DEBDF19ED6185003D7518 /* GTLTargetNamespace.h */,
+				CE8DEBE019ED6185003D7518 /* GTLUploadParameters.h */,
+				CE8DEBE119ED6185003D7518 /* GTLUtilities.h */,
+				CE8DEBE219ED6185003D7518 /* GTMGatherInputStream.h */,
+				CE8DEBE319ED6185003D7518 /* GTMHTTPFetcher.h */,
+				CE8DEBE419ED6185003D7518 /* GTMHTTPFetcherLogging.h */,
+				CE8DEBE519ED6185003D7518 /* GTMHTTPFetcherService.h */,
+				CE8DEBE619ED6185003D7518 /* GTMHTTPFetchHistory.h */,
+				CE8DEBE719ED6185003D7518 /* GTMHTTPUploadFetcher.h */,
+				CE8DEBE819ED6185003D7518 /* GTMMIMEDocument.h */,
+				CE8DEBE919ED6185003D7518 /* GTMOAuth2Authentication.h */,
+				CE8DEBEA19ED6185003D7518 /* GTMOAuth2SignIn.h */,
+				CE8DEBEB19ED6185003D7518 /* GTMOAuth2ViewControllerTouch.h */,
+				CE8DEBEC19ED6185003D7518 /* GTMOAuth2WindowController.h */,
+				CE8DEBED19ED6185003D7518 /* GTMReadMonitorInputStream.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		CE8DEBEE19ED61B1003D7518 /* Gmail */ = {
+			isa = PBXGroup;
+			children = (
+				CE8DEBEF19ED61B1003D7518 /* Generated */,
+			);
+			name = Gmail;
+			path = "google-api-objectc-client/Services/Gmail";
+			sourceTree = SOURCE_ROOT;
+		};
+		CE8DEBEF19ED61B1003D7518 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				CE8DEBF019ED61B1003D7518 /* GTLGmail.h */,
+				CE8DEBF119ED61B1003D7518 /* GTLGmail_Sources.m */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +294,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CE8DEBB419ED60DA003D7518 /* PBXTargetDependency */,
 			);
 			name = GmailViewerObjectiveC;
 			productName = GmailViewerObjectiveC;
@@ -186,6 +348,12 @@
 			mainGroup = CE8DEB6B19ED5BD0003D7518;
 			productRefGroup = CE8DEB7519ED5BD0003D7518 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CE8DEB9E19ED5FBA003D7518 /* Products */;
+					ProjectRef = CE8DEB9D19ED5FBA003D7518 /* GTL.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CE8DEB7319ED5BD0003D7518 /* GmailViewerObjectiveC */,
@@ -194,11 +362,43 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		CE8DEBA519ED5FBA003D7518 /* GTL.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GTL.framework;
+			remoteRef = CE8DEBA419ED5FBA003D7518 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE8DEBA719ED5FBA003D7518 /* libGTLTouchStaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGTLTouchStaticLib.a;
+			remoteRef = CE8DEBA619ED5FBA003D7518 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE8DEBA919ED5FBA003D7518 /* GTLUnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GTLUnitTests.xctest;
+			remoteRef = CE8DEBA819ED5FBA003D7518 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE8DEBAB19ED5FBA003D7518 /* DevelopmentTestTool */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = DevelopmentTestTool;
+			remoteRef = CE8DEBAA19ED5FBA003D7518 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		CE8DEB7219ED5BD0003D7518 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8DEC2419ED6208003D7518 /* GTMOAuth2ViewTouch.xib in Resources */,
 				CE8DEB8319ED5BD0003D7518 /* Main.storyboard in Resources */,
 				CE8DEB8819ED5BD0003D7518 /* LaunchScreen.xib in Resources */,
 				CE8DEB8519ED5BD0003D7518 /* Images.xcassets in Resources */,
@@ -220,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE8DEB8019ED5BD0003D7518 /* ViewController.m in Sources */,
+				CE8DEC1219ED61B1003D7518 /* GTLGmail_Sources.m in Sources */,
 				CE8DEB7D19ED5BD0003D7518 /* AppDelegate.m in Sources */,
 				CE8DEB7A19ED5BD0003D7518 /* main.m in Sources */,
 			);
@@ -240,6 +441,11 @@
 			isa = PBXTargetDependency;
 			target = CE8DEB7319ED5BD0003D7518 /* GmailViewerObjectiveC */;
 			targetProxy = CE8DEB8E19ED5BD0003D7518 /* PBXContainerItemProxy */;
+		};
+		CE8DEBB419ED60DA003D7518 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTLTouchStaticLib;
+			targetProxy = CE8DEBB319ED60DA003D7518 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -342,6 +548,7 @@
 		CE8DEB9819ED5BD0003D7518 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GmailViewerObjectiveC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -352,6 +559,7 @@
 		CE8DEB9919ED5BD0003D7518 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GmailViewerObjectiveC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
